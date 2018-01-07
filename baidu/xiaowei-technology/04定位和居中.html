@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+#d{
+	width:400px;
+	height:200px;
+	background-color: #ccc;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-200px;
+}
+
+#left-top{
+	border-radius: 0 0 50px 0;
+	position:absolute;
+}
+
+#right-bottom{
+	border-radius: 50px 0 0 0;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+.circle{
+	background-color: yellow;
+	width:50px;
+	height:50px;
+}
+	</style>
+</head>
+<body>
+	<div id="d">
+		<div id="left-top" class="circle"></div>
+
+		<div id="right-bottom" class="circle"></div>
+	</div>
+</body>
+</html>

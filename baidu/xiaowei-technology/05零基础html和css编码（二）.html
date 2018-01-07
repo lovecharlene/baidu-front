@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css编码（二）</title>
+</head>
+ <style>
+     body{
+      background-color: black;
+      margin: 0px;
+     }
+     #img1{
+       width:200px;
+       height:100px;
+       padding:0px;
+       margin:-40px;
+     }
+     #navigation{
+      margin-top:0px;
+      margin-right: 25px;
+      margin-left: 25px;
+      height:50px;
+      padding: 10px;
+      background-color:#272521;
+     }
+     #a li{
+     display:inline-block;
+
+     }
+     nav{
+      margin-top: -20px;
+     }
+    li a{
+      color:white;
+      padding: 5px;
+      margin:5px;
+      text-decoration: none;
+      height:10px;
+
+    }
+    li a:hover{
+      color:gray;
+    }
+     #a{
+      text-align: right;
+     }
+     .article{
+      background-color:white;
+      margin:10px;
+      padding:15px;
+     }
+     #main{
+      background-color: #c5c2c2;
+      margin:0 25px;
+      padding: 15px;
+     }
+     #footer{
+      background-color: black;
+      color:white;
+      height:50px;
+      font-style: white;
+      text-align: center;
+      margin-top:20px;
+      vertical-align: center;
+      
+     }
+     p{
+      text-indent: 2em;
+     }
+     #sidebar{
+      text-align: center;
+      background-color: white;
+      margin:10px 30px;
+      width:400px;
+      float:right;
+      height:100%;
+
+     }
+     #submit{
+      background-color: #4037f1;
+      height:50px;
+      width:90%;
+      border-radius: 15px;
+      text-align:center;
+      margin: 15px auto;
+     }
+    h3{
+      text-align: left;
+      margin:40px;
+      padding: 10px;
+    }
+    #imgs{
+      background-color:white;
+      padding: 20px;
+      margin: 10px;
+
+    }
+    .picture{
+      border: 1px solid gray;
+      height:auto;
+      width:15%;
+      margin-right: 10px; 
+      margin-bottom: 10px;
+      padding: 10px;
+      display:inline-block;
+    }
+    .picture img{
+      height:auto;
+      width:100%;
+    }
+    .picture p{
+      text-indent: 0;
+      font-size: 10px;
+      text-align: center;
+    }
+    li{
+      list-style-type: none;
+    }
+
+    table{
+      width:90%;
+      height:200px;
+    }
+    th{
+      background-color:#272521;
+      color:white; 
+    }
+    tfoot{
+      background-color: gray;
+    }
+    #sidebar p{
+      color: gray;
+      text-indent: 0em;
+
+    }
+    label{
+      display: table-cell;
+      padding-left:300px;
+      text-align: right;
+    }
+    #sidebar td:nth-child(odd) {
+      text-align: right;
+    }
+    #sidebar td:nth-child(even) {
+      text-align: left;
+    }
+  #left{
+    width:800px;
+    margin-right:500px;
+  }
+
+
+</style>
+
+
+
+<body>
+  <div id="navigation">
+  	<img src="../20000.png" id="img1">
+    <nav>  	
+      <ul id="a">
+      	<li><a href="#">导航链接一</a></li>
+      	<li><a href="#">导航链接二</a></li>
+      	<li><a href="#">导航链接三</a></li>
+      	<li><a href="#">导航链接四</a></li>
+    	</ul>
+    </nav>
+	</div>
+	<div id="main">
+
+    <div id="sidebar">
+      <h3>这里是一个侧栏，这是侧栏的标题</h3>
+      <form action="" method="post">
+        <table>
+          <tr>
+            <td>请输入邮箱地址&nbsp&nbsp</td>
+            <td><input type="email" placeholder="这是一个文本输入框"/></td>
+          </tr>
+          <tr>
+            <td>&nbsp</td>
+            <td><p>邮箱地址请按要求格式输入</p></td>
+          </tr>
+          <tr>
+            <td>请输入密码&nbsp&nbsp</td>
+            <td><input type="passwo rd" placeholder="这是一个文本框"></td>
+          </tr>
+          <tr>
+            <td>请重复输入密码&nbsp&nbsp</td>
+            <td><input type="password" placeholder="这是一个文本框"></td>
+          </tr>
+          <tr>
+            <td>&nbsp</td>
+            <td><p>密码请为6-16位英文数字</p></td><br/>
+          </tr>
+          <tr>
+            <td>性别&nbsp&nbsp</td>
+            <td><input type="radio" checked="checked" name="gender"/>男
+            <input type="radio" name="gender"/>女</td>
+          </tr>
+          <tr>
+            <td>城市&nbsp&nbsp</td>
+            <td>
+              <select name="city">
+                <option>北京</option>
+                <option>上海</option>
+                <option>广州</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>爱好&nbsp&nbsp</td>
+            <td>
+             <input type="checkbox">运动
+             <input type="checkbox" >艺术
+             <input type="checkbox">科学
+            </td>
+         </tr>
+         <tr>
+           <td>个人描述&nbsp&nbsp</td>
+           <td><textarea placeholder="这是一个多行输入框,输入您的个人描述。" rows ="4" cols="30" style="vertical-align:top"></textarea></td>
+         </tr>
+        </table>
+      </form>
+      <input type="submit" value="确认提交" id="submit">
+    </div>
+
+   <div id="left">
+    <div id="main1" class="article">
+	      <h2>文章一级标题</h2>
+   	    <h3>文章二级标题</h3>
+   	    <span>文章作者 文章发表时间</span>
+   	    <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长这是一个很长的段落，这是一个很长的段落，<a href="http://www.baidu.com">这里有一个链接到http://www.baidu.com</a>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<b>这是一个很长的段落，</b>这是一个很长的段落，<img src="../timg.jpg" width="600" height="300"/><br/>
+        这是一个很长的段落，的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<a target="_blank" href="http://www.baidu.com"></a>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</p><br/>
+    </div>
+    <div id="main2" class="article">
+     	<h2>另一篇文章一级标题</h2>
+     	<h3>文章二级标题</h3>
+   	    <span>文章作者 文章发表时间</span><br/>
+     	<p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<br/>
+      这是一个很长这是一个很长的段落，这是一个很长的段落，<a href="http://www.baidu.com">这里有一个链接到http://www.baidu.com</a>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<b>这是一个很长的段落，</b>这是一个很长的段落，这是一个很长的段落，的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<a target="_blank" href="http://www.baidu.com">这里有一个链接新窗口跳到到http://www.baidu.com</a>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</p>
+      <img src="../timg.jpg" width="600" height="300"/ >
+     	<ul>
+     		<li>列表项目一</li>
+     		<li>列表项目二</li>
+     		<li>列表项目三</li>
+     	</ul>
+    </div>
+    <div id="imgs">
+      <h3>图片</h3>
+      
+        <div class="picture">
+         	<p>好看的图片</p>
+         	<img src="../timg.jpg"/>
+        </div>
+     
+        <div class="picture">
+        	<p>好看的图片</p>
+        	<img src="../timg.jpg"/>
+        </div>
+     
+        <div class="picture">
+        	<p>好看的图片</p>
+        	<img src="../timg.jpg"/>
+        </div>
+     
+        <div class="picture">
+        	<p>好看的图片</p>
+        	<img src="../timg.jpg"/>
+        </div>
+
+        <div class="picture">
+          <p>好看的图片</p>
+          <img src="../timg.jpg"/>
+        </div>
+     
+        <div class="picture">
+          <p>好看的图片</p>
+          <img src="../timg.jpg"/>
+        </div>
+     
+        <div class="picture">
+          <p>好看的图片</p>
+          <img src="../timg.jpg"/>
+        </div>
+     
+        <div class="picture">
+          <p>好看的图片</p>
+          <img src="../timg.jpg"/>
+        </div>
+
+        <div class="picture">
+          <p>好看的图片</p>
+          <img src="../timg.jpg"/>
+        </div>
+     
+        <div class="picture">
+          <p>好看的图片</p>
+          <img src="../timg.jpg"/>
+        </div>
+     
+        
+      
+    </div>
+    <div id="main3" class="article">
+     	<h2>最后一篇文章一级标题</h2>
+     	<h3>文章二级标题</h3>
+     	<span>文章作者 文章发表时间</span>
+     	<ol>
+     		<li>排名1</li>
+     		<li>排名2</li>
+     		<li>排名3</li>
+     	</ol>
+
+     	<table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+    	   	<tr>
+    	   		<th>表头</th>
+    	   		<th>表头</th>
+    	   		<th>表头</th>
+    	   	</tr>
+        </thead>
+       <tbody>
+     		<tr>
+     			<td>表内容单元格</td>
+     			<td>表内容单元格</td>
+     			<td><a href="">操作</a></td>
+     		</tr>
+     		<tr>
+     			<td>表内容单元格</td>
+     			<td>表内容单元格</td>
+     			<td><a href="">操作</a></td>
+     		</tr>
+     		<tr>
+     			<td>表内容单元格</td>
+     			<td>表内容单元格</td>
+     			<td><a href="">操作</a></td>
+     		</tr>
+     		<tr>
+     			<td>表内容单元格</td>
+     			<td>表内容单元格</td>
+     			<td><a href="">操作</a></td>
+     		</tr>
+        </tbody>
+        <tfoot>
+         		<tr>
+         			<td>总计</td>
+         			<td colspan="2">1000</td>
+         		</tr>
+        </tfoot>
+     	</table>
+    </div>
+  </div>
+
+   
+  </div>
+
+	<div id="footer">版权所有©</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Layout - CSS</title>
+<style>
+* {margin: 0;padding: 0;}
+
+
+
+header {background: #f00;}
+
+nav {
+	width: 150px;
+	background: #dcd9c0;
+}
+
+nav li {list-style-type: none;}
+
+article {
+	/*padding:10px 20px;*/
+	background: #ffed53;
+}
+
+aside {	width: 210px;}
+
+footer {
+	clear: both;
+	background: #000;
+}
+
+
+div#threecolwrap {
+	/*浮动强制它包围浮动的栏*/
+	float:left;
+	width:100%;
+}
+div#twocolwrap {
+	/*浮动强制它包围浮动的栏*/
+	float:left;
+	width:100%;
+	/*把右栏拉到区块外边距腾出的位置上*/
+	margin-right:-210px;
+}
+#negative nav, #negative aside{float:left;}
+#negative article{margin-left:150px;margin-right:210px;}
+</style>
+</head>
+<body>
+	
+	<div id="negative">
+		<header>Layout</header>
+		<div id="threecolwrap">
+			<div id="twocolwrap">
+			<nav>
+				<ol>
+					<li>Home</li>
+					<li>Documentation</li>
+					<li>Download</li>
+				</ol>
+			</nav>
+			<article>喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜.</article>
+			</div>
+			<aside>哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢哦哦哦哦哦噢噢噢噢</aside>
+		</div>
+		<footer>Contact Us, Copy Right</footer>
+	</div>
+</body>
+</html>

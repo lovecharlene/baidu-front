@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏布局</title>
+	<style>
+	#big{
+		background-color:#eee;
+		padding: 20px;
+		border:1px solid #999;
+		height:100%;
+        float: left;
+       
+	}
+    .left{
+        border:1px solid #999;
+        float:left;
+    }
+      #two{
+        float: left;
+        width:100%;
+        margin-right: -140px;
+    }
+     .right{
+        border:1px solid #999;
+        float:left;
+        margin-left:20px;
+
+    }
+    .center{
+        font-size: 10px;
+        padding:20px;
+        border:1px solid #999;
+        margin-right:140px;
+        margin-left:220px;  
+    }
+  
+    #big1{
+    	width:198px;
+    	background-color: white;
+    	
+    }
+    #small{
+    	width:80px;
+    	height:80px;
+    	background-color: gray;
+    	margin:20px;
+    
+    }
+    
+    #big2{
+    	background-color: white;
+    	width:auto;	
+    }
+    
+    #big3{
+    	background-color: white;
+        width:118px;
+
+    }
+    .little{
+    	background-color: gray;
+    	width: 80px;
+    	height:80px;
+    	margin: 20px;
+    	
+    }
+   
+    
+
+	</style>
+</head>
+<body>
+	<div id="big">
+    <div id="two">
+		<div id="big1" class="left">团队名称
+			<div id="small">团队logo80x80</div>
+		</div>
+		
+		
+		<div id="big2" class="center">
+			<p>关于你们团队的介绍</p>
+			<p>可以给我们解释一下来历，或是分别介绍你们的团队成员。</p>
+			<p>(以下为示例)</p>
+			<p>百度前端技术学院可以给我们解释一下来历，或是分别介绍你们的团队成员。百度前端技术学院可以给我们解释一下来历，或是分别介绍你们的团队成员。</p>
+			<p>2016年春季班概述</p>
+			<p>百度前端技术学院可以给我们解释一下来历，或是分别介绍你们的团队成员。百度前端技术学院可以给我们解释一下来历，或是分别介绍你们的团队成员。百度前端技术学院可以给我们解释一下来历，或是分别介绍你们的团队成员。百度前端技术学院可以给我们解释一下来历，或是分别介绍你们的团队成员。百度前端技术学院可以给我们解释一下来历，或是分别介绍你们的团队成员。百度前端技术学院可以给我们解释一下来历，或是分别介绍你们的团队成员。</p>
+		</div>
+    </div>
+        <div id="big3" class="right">
+            <div class="little">个人logo80x80</div>
+            <div class="little">个人logo80x80</div>
+            <div class="little">个人logo80x80</div>
+            <div class="little">个人logo80x80</div>
+        </div>
+	</div>
+
+	
+</body>
+</html>
