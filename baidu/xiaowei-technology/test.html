@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<style type="text/css">
+		div {
+			margin: 20px auto;
+		}
+		.test1 {
+			height: 400px;
+			width: 90%;
+			border: 1px solid red;
+		}
+		.test2 {
+			height: 90%;
+			width: 90%;
+			border: 1px solid red;
+		}
+		.test3 {
+			height: 90%;
+			width: 90%;
+			border: 1px solid red;
+		}
+		.test4 {
+			height: 90%;
+			width: 90%;
+			border: 1px solid red;
+		}
+		.test5 {
+			height: 90%;
+			width: 90%;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="test1">
+		<div class="test2">
+			<div class="test3">
+				<div class="test4">
+					<div class="test5" id="test50"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function getElementLeft(elemet) {
+			var acctualLeft = elemet.offsetLeft;
+			var current=elemet.offsetParent;
+			console.log("acctualLeft: " + acctualLeft);
+			while(current!==null){
+                acctualLeft+=current.offsetLeft;
+                current=current.offsetParent;
+			}
+			return acctualLeft;
+
+		}
+		function getElementTop(element){
+			var acctualTop=element.offsetTop;
+			var current=element.offsetParent;
+			console.log("acctualTop: " + acctualTop);
+			while (current!==null){
+				acctualTop+=current.offsetTop;
+				current=current.offsetParent;
+
+			}
+			return acctualTop;
+		}
+		var res=document.getElementById("test50");
+		var left = getElementLeft(res);
+		var tops = getElementTop(res);
+		console.log("left: " + left + ", top: " + tops);
+	</script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scale=1">
+	<title>mobile terminal</title>
+	<style>
+	    body{
+	    	margin:0 auto;
+	    	background: orange;
+
+	    }
+	    .container{
+	    	background-color: gray;
+	    	width: 60%;
+	    	margin:auto;
+	    }
+	    .part1,.part2,.part3,.patr4{
+	    	margin-bottom:20px;
+	    }
+		.top{
+			display: flex;
+			width:100%;
+			height:100px;
+			margin:auto;
+			background-color: #79c5e7;
+			justify-content: flex-start;
+			align-items: center;
+			flex-flow:row wrap;
+
+		}
+		.back{
+			width:80px;
+			height:35px;
+			font-size: 30px;
+			color:#fff;
+		}
+		
+		#icon1{
+       /* display: inline-block; 
+         float: left;*/
+        margin: 40px 30px;  
+        border-left: 5px solid; border-bottom: 5px solid;  
+        width: 20px; height: 20px;  
+        transform: rotate(45deg);  
+        color:white;
+		}
+		.title{
+			width: 180px;
+			height:45px;
+			font-size: 35px;
+			color:#fff;
+			margin-left: 170px;
+			
+		}
+		.nav{
+			height:100px;
+			font-size: 25px;	
+			background-color: white;
+			display: flex;
+			justify-content: space-between;
+		}
+		.nav li{
+			width: 20%;
+			height:95px;
+			line-height: 95px;
+			text-align: center;
+			list-style-type: none;
+		}
+		.nav a{
+			font-size: 30px;
+			text-decoration: none;
+			color:black;
+		}
+		.nav{
+			margin:0 auto;
+		}
+		.nav li:hover{
+			border-bottom:5px solid #79c5e7;
+		}
+		.photo{
+            height:500px;
+            display: flex;
+
+		}
+		.photo img{
+            height:500px;
+            display: flex;
+            width: 100%;
+		}
+        .demo{
+        	display: flex;
+        	height:200px;
+        	background-color: #fff;
+            justify-content:space-around;
+            /*align-items: flex-end;*/
+        }
+        .item{
+        	width:20%;
+        	margin:auto;
+
+        }
+
+        .tag{
+        	display: flex;
+        	justify-content: space-around;
+        	height:100px;
+        	background-color: white;
+        	border-bottom:2px solid gray;
+        }
+        .lab{
+            text-align: center;
+            font-size: 30px;
+        	
+        }
+       
+        
+        .section{
+        	height:400px;
+        	margin:auto;
+             display: flex;
+             justify-content: space-around;
+             flex-flow:row wrap;
+             align-items: center;
+             background-color: white;
+        }
+        .prc{
+        	width:32%;
+        	height:300px;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	flex-direction: column;
+
+        }
+        .picturex{
+        	width:200px;
+        	height:250px;
+
+        }
+        .picturex img{
+        	width:200px;
+        	height:250px;
+        }
+        .prc1{
+        	font-size: 40px;
+        	margin:10px auto;
+        	height:40px;
+        	line-height: 40px;
+        	color:#666;
+
+        }
+         .prc2{
+        	font-size: 30px;
+        	margin:10px auto;
+        	height:35px;
+        	line-height: 35px;
+        	color:#888;
+
+        }
+           .rightborder{
+           	border-right:2px solid gray;
+           }
+
+           .part2,.part3{
+           	height:600px;
+           	margin:auto;
+           	display: flex;
+           	background-color: #fff;
+           	flex-flow:row wrap;
+           }
+           .module{
+           	height:70px;
+           	width:100%;
+           	line-height: 50px;
+           	font-size: 40px;
+           	color:gray;
+           	border-bottom: 2px solid gray;
+           	margin:20px 10px;
+           }
+
+           .pic1{
+           	width:200px;
+           	height:200px;
+           }
+            .pic1 img{
+            width:200px;
+           	height:200px;
+           	border:2px solid orange;
+            }
+
+           .box1,.box2,.box3,.box4{
+           	width:100%;
+           	height:220px;
+           	margin:auto;
+           	display: flex;
+           	justify-content: space-around;
+           	flex-flow:row wrap;
+           }
+           .wordwrapper{
+           	width:65%;
+           	height:220px;
+           	display: flex;
+           	align-items: center;
+           	justify-content: space-around;
+           	flex-wrap: wrap;
+           	/* justify-content: flex-end;*/
+           	  /*align-content: space-between;*/
+           }
+           .product{
+           	margin:auto;
+           	width:40%;
+           	height:70px;
+           	line-height: 70px;
+           	background-color: #eee;
+           	font-size: 30px;
+           	text-align: center;
+           	color: gray;
+           }
+           .part2{
+           	margin-bottom: 20px;
+           }
+           .part3{
+           	margin-bottom: 20px;
+           }
+           .new{
+           	width:100%;
+           	height:600px;
+           	display: flex;
+           	flex-flow:row wrap;
+           	background-color: #fff;
+
+           }
+           /*.pic2{
+           	width:200px;
+           	height:200px;
+           }*/
+           .pic2 img{
+           	width:200px;
+           	height:200px;
+           }
+          
+           .box5,.box6{
+           	width:100%;
+           	height:240px;
+           	display: flex;
+           	justify-content: space-around;
+           	border-bottom:2px solid gray;
+           	flex-flow:row wrap;
+           	margin:auto;
+
+           }
+           .new2{
+           	width:100%;
+           	height:400px;
+           	background-color:#fff;
+           	display: flex;
+           	flex-direction: column;
+           	/*justify-content: space-around;
+           	align-content: space-around;*/
+           }
+           .newsPicwarp{
+           	width:95%;
+           	height:200px;
+           	margin:auto;
+           	display: flex;
+           	flex-direction: row;
+           	justify-content: space-around;
+           	margin: 20px auto;
+           }
+           .newsDesc{
+           	width:60%;
+           	height: 200px;
+           	display: flex;
+           	flex-direction: column;
+           	justify-content: space-between;
+
+           }
+           .newtitle{
+           	font-size: 35px;
+           	color:gray;
+           	height:40px;
+           	line-height: 40px;
+           }
+           .newtime{
+           	font-size: 30px;
+           	color:#9e9e9e;
+           	height:30px;
+           	line-height: 30px;
+           }
+           .newtitle2{
+           	width:100%;
+           	height:40px;
+           	font-size:35px;
+           	line-height: 40px;
+           	display: flex;
+           	flex-direction: row;
+           	color: gray;
+           justify-content: flex-start;
+           padding-top: 20px;
+           padding-left: 20px;
+
+           }
+           .newtime2{
+           	width:100%;
+           	height:30px;
+           	color:#9e9e9e;
+           	font-size: 30px;
+           	line-height: 30px;
+           	display: flex;
+           	flex-direction: row;
+           	justify-content: flex-start;
+           	padding-top: 20px;
+           	padding-left: 20px;
+
+           }
+           .part4{
+           	margin-bottom: 20px;
+           }
+          
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="part1">
+		<div class="top">
+			<div id="icon1"><a href="#"></a></div>
+			<div class="back">返回</div>
+			<div class="title">这是标题</div>
+		</div>
+		
+			<ul class="nav" >
+				<li><a href="">导航</a></li>
+				<li><a href="">导航</a></li>
+				<li><a href="">导航</a></li>
+				<li><a href="">导航</a></li>
+				<li><a href="">导航</a></li>
+			</ul>
+		
+
+			<div class="photo"><img src="./images/11timg.jpg"  /></div>
+			
+			<div class="demo">
+				<div class="item item1"><img src="./images/11icon.png"  /></div>
+				<div class="item item2"><img src="./images/11icon.png"  /></div>
+				<div class="item item3"><img src="./images/11icon.png"  /></div>
+				<div class="item item4"><img src="./images/11icon.png"  /></div>
+				<div class="item item5"><img src="./images/11icon.png"  /></div>
+			</div>
+
+			<div class="tag">
+				<div class="lab">标签</div>
+				<div class="lab">标签</div>
+				<div class="lab">标签</div>
+				<div class="lab">标签</div>
+				<div class="lab">标签</div>
+			</div>
+		
+		<div class="section">
+			<div class="prc rightborder">
+				<div class="picturex"><img src="./images/11timg.jpg"  /></div>
+				<div class="prc1">分栏一</div>
+				<div class="prc2">分栏小标题</div>
+			</div>
+            
+            <div class="prc rightborder">
+				<div class="picturex"><img src="./images/11timg.jpg"  /></div>
+				<div class="prc1">分栏二</div>
+				<div class="prc2">分栏小标题</div>
+		    </div>
+
+            <div class="prc ">
+              	<div class="picturex"><img src="./images/11timg.jpg"  /></div>
+				<div class="prc1">分栏三</div>
+				<div class="prc2">分栏小标题</div>
+	        </div>
+	    </div>
+	</div>
+
+
+	<div class="part2">
+		<div class="module">模块一</div>
+		<div class="box1">
+			<div class="pic1"><img src="./images/11timg.jpg"  /></div>
+			<div class="wordwrapper">
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+			</div>
+		</div>
+
+		<div class="box2">
+			<div class="pic1"><img src="./images/11timg.jpg"  /></div>
+			<div class="wordwrapper">
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+		     </div>
+		</div>
+	</div>
+
+
+	<div class="part3">
+		<div class="module">模块二</div>
+		<div class="box3">
+			<div class="pic1"><img src="./images/11timg.jpg"  /></div>
+			<div class="wordwrapper">
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+			</div>
+		</div>
+
+		<div class="box4">
+			<div class="pic1"><img src="./images/11timg.jpg"  /></div>
+			<div class="wordwrapper">
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+				<div class="product">这是文案</div>
+				<div class="product"> 这是文案</div>
+		     </div>
+		</div>
+	</div>
+
+
+	<div class="part4">
+		<div class="new">
+			<div class="box5">
+				<div class="pic2"><img src="./images/11timg.jpg"  /></div>
+				<div class="newsDesc">
+					<div class="newtitle">这是文章标题字号是22的文章标题</div>
+					<div class="newtime">文章来源 6分钟前</div>
+				</div>
+			</div>
+
+			<div class="box6">
+				<div class="pic2"><img src="./images/11timg.jpg"  /></div>
+				<div class="newsDesc">
+					<div class="newtitle">这是另一个文章标题</div>
+					<div class="newtime">文章来源 7分钟前</div>
+				</div>
+			</div>
+	    </div>
+
+       <div class="new2">
+			<div class="box7">
+				<div class="newtitle2">这是也是文章标题字号是22的文章标题</div>
+				 <div class="newsPicwarp">
+					<div class="pic2"><img src="./images/11timg.jpg"  /></div>
+					<div class="pic2"><img src="./images/11timg.jpg"  /></div>
+					<div class="pic2"><img src="./images/11timg.jpg"  /></div>
+				</div>
+	            <div class="newtime2">文章来源 7分钟前</div>
+			</div>
+	  </div>
+	</div>
+  </div>
+</body>
+</html>

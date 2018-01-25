@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#show  {
+			
+			list-style-type: none;
+		}
+		#show li{
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			margin-left: 10px;
+			display: block;
+			float: left;
+            background-color: red;
+            font-size: 30px;
+			color: #fff;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="num">
+	<input type="button" value="左侧入" id="leftin">
+	<input type="button" value="右侧入" id="rightin">
+	<input type="button" value="左侧出" id="leftout">
+	<input type="button" value="右侧出" id="rightout">
+	<ul id="show"><li>3</li></ul>
+
+	<script type="text/javascript">
+
+var input=document.getElementById("num");
+var leftin=document.getElementById("leftin");
+var rightin=document.getElementById("rightin");
+var leftout=document.getElementById("leftout");
+var rightout=document.getElementById("rightout");
+
+var ul=document.getElementById("show");
+var li=document.getElementsByTagName("li");
+
+(function(){
+     leftin.onclick=function(){
+     	if(!isNaN(input.value)){
+ 			var li=document.createElement("li");
+ 		    li.innerHTML=input.value;
+ 		    ul.insertBefore(li, ul.firstChild);
+
+ 		    li.addEventListener('click', function(){
+ 		    	console.log(11);
+ 		    	alert("您确定删除吗？");
+ 		    	ul.removeChild(this);
+ 		    });
+ 		  
+     	} else{
+     		alert("请输入数字！");
+     	}
+     	input.value="";
+     }
+    rightin.onclick=function(){
+     	if(!isNaN(input.value)){
+ 			var li=document.createElement("li")
+ 			li.innerHTML=input.value;
+ 			ul.appendChild(li,ul.lastChild);
+
+ 			li.addEventListener('click', function(){
+ 				console.log(11);
+ 				alert("您确定删除吗？");
+ 		    	ul.removeChild(this);
+ 		    });
+     	   
+     	}else{
+     		alert("请输入数字！");
+     	}
+     	input.value="";
+     }
+
+     leftout.onclick=function(){
+     	alert("您确定删除"+ul.firstChild.innerHTML+"吗？");
+     	ul.removeChild(ul.firstChild);
+     }
+
+     rightout.onclick=function(){
+     	alert("您确定删除"+ul.lastChild.innerHTML+"吗？");
+     	ul.removeChild(ul.lastChild);
+	}
+
+	// function del(element) {
+	// 	if (ul.hasChildNodes(element)) {
+	// 		ul.removeChild(this);
+	// 	}
+	// }
+
+ 	for(var i=0,len=li.length;i<len;i++){
+ 		li[i].addEventListener("click", function(){
+ 			alert("您确定删除吗？");
+ 			ul.removeChild(this);
+
+ 		});
+    }
+})();
+
+
+
+
+
+// （第二种方法）
+		// var arr = [];
+		// var show = document.getElementById("show");
+		// function common() {
+		// 	var input = document.getElementById("num");
+		// 	var num = input.value;
+		// 	var e = document.createElement("div");
+		// 	e.innerHTML = num;
+		// 	input.value = '';
+		// 	return e;
+		// }
+
+		// function leftIn() {
+		// 	var e = common();
+		// 	if (!show.firstChild) {
+		// 		show.appendChild(e);
+		// 	} else {
+		// 		show.insertBefore(e, show.firstChild);
+		// 	}
+		// }
+
+		// function rightIn() {
+		// 	var e = common();
+		// 	show.appendChild(e);
+		// }
+
+		// function leftOut() {
+		// 	if (show.firstChild) {
+		// 		show.removeChild(show.firstChild);
+		// 	} 
+		// }
+
+		// function rightOut() {
+		// 	if (show.lastChild) {
+		// 		show.removeChild(show.lastChild);
+		// 	}
+		// }
+		// var leftin = document.getElementById("leftin");
+		// var rightin = document.getElementById("rightin");
+		// var leftout = document.getElementById("leftout");
+		// var rightout = document.getElementById("rightout");
+		// leftin.onclick = function() {
+		// 	leftIn();
+		// }
+		// rightin.onclick = function() {
+		// 	rightIn();
+		// }
+		// leftout.onclick = function() {
+		// 	leftOut();
+		// }
+		// rightout.onclick = function() {
+		// 	rightOut();
+		// }
+		// show.childNode.onclick=function(){
+		// 	removeChild();
+		// }
+	</script>
+</body>
+</html>

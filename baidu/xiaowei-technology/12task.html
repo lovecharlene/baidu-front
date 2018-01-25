@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		table{
+			width:400px;
+			margin:0 auto;
+		}
+		table thead{
+			background-color: black;
+			color:white;
+		}
+		table tbody tr{
+			color:black;
+		}
+		table tbody tr:nth-child(odd){
+			background-color: white;
+		}
+		table tbody tr:nth-child(even){
+			background-color: gray;
+		}
+		table tbody tr:nth-child(-n+3){
+			color:red;
+		}
+		.div2{
+			text-align: center;
+			margin-top: 20px;
+		}
+		.div2 input{
+			width:100px;
+			height:20px;
+		}
+		.div2 input:focus{
+			width:200px;
+			height:30px;
+            border:1px solid #0055cc;
+            border-radius: 5px;
+            transition: width 1s ;
+            box-shadow: 0 0 5px blue;
+		}
+		/*.div3{
+			margin-top: 20px;
+		}
+		#content{
+			width:400px;
+			height:200px;
+			background-color: green;
+			position: relative;
+			margin:0 auto;
+			overflow: hidden;
+		}*/
+		/*#content div>div:first-child{
+			position:absolute;
+			width:30px;
+			height:30px;
+			right:0px;
+			display:inline-block;
+			background:rgba(255,255,255,0.5);
+			text-align:center;
+			vertical-align: middle;
+			*/
+		/*}*/
+
+ /*       #content div>div:first-child:before{
+		content:' ';
+		height:100%;
+		visibility: hidden;
+		display: inline-block;
+		vertical-align: middle;
+}*/
+      /* #content #con1 div:first-child{
+			bottom:0px;
+			right:70px;
+		}
+		#content #con2 div:first-child{
+			bottom:0px;
+			right:35px;
+		}
+		#content #con3 div:first-child{
+			bottom:0px;
+			right:0px;
+		}
+		   
+		   .con1{
+		   	background: green;
+		   }  
+		   .con2{
+		   	background:linear-gradient(left,blue 50%,green 50%);
+		   }*/
+
+  /* .con2{
+	background:-moz-linear-gradient(left,green 50%,#00f 50%);
+	background:-webkit-gradient(linear,left,right,from(green),to(#00f));
+	background:-webkit-linear-gradient(left,green 50%,#00f 50%);
+	background:-o-linear-gradient(left,green 50%,#00f 50%);
+	background:linear-gradient(left,green 50%,#00f 50%);
+	
+}*/
+   /*
+        .con3{
+           	background: blue;
+           }*/
+       
+.lunbo{
+	position: relative;
+	width: 300px;
+	height: 150px;
+	margin-top: 20px;
+	overflow: hidden;
+	background-color: #ffa500;
+	margin:0 auto;
+	margin-top: 20px;
+	
+}
+
+.lunbo ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.lunbo li{
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	animation: 0.5s slider-out linear;
+}
+
+.lunbo li:target{
+	left: 0%;
+	animation: 0.5s slider-in linear;
+	
+}
+
+@keyframes slider-out{
+	0%{
+		left: 0%;
+		
+	}
+	
+	100%{
+		left: -100%;
+	}
+}
+
+@keyframes slider-in{
+	0%{
+		left: 100%;
+	}
+	100%{
+		left: 0%;
+	}
+}
+
+.slide1{
+	background-color: #ffa500;
+}
+
+.slide2{
+	background-color: #FF0000;
+}
+
+.slide3{
+	background-color: #0000FF;
+}
+
+.num{
+    display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+    z-index: 100;
+}
+
+.num a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+	
+	opacity: 0.7;
+	background-color: #B7B7B7;
+	color: #FFFFFF;
+	text-decoration: none;
+	float: left;
+}
+
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<table>
+			<thead>
+				<tr>
+					<td>排名</td>
+					<td>网站</td>
+					<td>热度</td>
+			    </tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>百度前端技术学院</td>
+					<td>13000</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>百度前端技术学院</td>
+					<td>12000</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>百度前端技术学院</td>
+					<td>11000</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>百度前端技术学院</td>
+					<td>10000</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>百度前端技术学院</td>
+					<td>9000</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>百度前端技术学院</td>
+					<td>8000</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>百度前端技术学院</td>
+					<td>7000</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>百度前端技术学院</td>
+					<td>6000</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>百度前端技术学院</td>
+					<td>5000</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>百度前端技术学院</td>
+					<td>4000</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+		<div class="div2"><input type="text" name=""></div>
+
+	
+		<div class="lunbo">
+			<ul>
+				<li class="slide1" id="slide1"></li>
+				<li class="slide2" id="slide2"></li>
+				<li class="slide3" id="slide3"></li>
+			</ul>
+			<div class="num">
+				<a href="#slide1">1</a>
+				<a href="#slide2">2</a>
+				<a href="#slide3">3</a>
+			</div>
+		</div>
+		
+
+	    
+
+</body>
+</html>

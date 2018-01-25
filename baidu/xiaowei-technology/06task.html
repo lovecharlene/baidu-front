@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模拟报纸排版</title>
+	<style>
+	body{
+		margin-top: 0;
+	}
+#container{
+	padding:0 25px;
+	margin:0 25px;
+	
+	
+}
+#head{
+	margin-top: 0;
+	width:100%;
+	height:50px;
+	border-bottom: 2px solid gray;
+	position:relative;
+	background-color: white;
+	
+}
+#small{
+	width:100px;
+	height:50px;
+	background-color: #db3939;
+	position:absolute;
+	text-align: left;
+}
+#date{
+	text-align: right;
+	font-size: 10px;
+	color:#db3939;
+	line-height: 80px;/*实现文字底部显示*/
+}
+#date p{
+	margin:0;
+}
+#small a{
+	color: white;
+	text-decoration: none;
+	
+
+	}
+#small p{
+line-height: 50px;/*实现文字底部显示*/
+text-indent: 1em;
+font-size: 10px;	
+}
+
+#img1{
+float:left;
+margin-top:25px;
+margin-right: 80px;
+}
+#content1{
+float:right;
+margin-left:20px;
+margin-top: 25px;
+height:400px;
+width:300px;
+border-top: 2px solid #db3939;
+}
+.imgs{
+	width: 100%;
+	height:450px;
+}
+.imgs #clear: {
+	clear: both;
+}
+.title1{
+font-size: 25px;
+color:#000;
+font-family: "Microsoft Yahei";
+text-decoration: underline;
+line-height: 40px;
+}
+.title{
+font-size: 12px;
+color:#676767;
+font-family: "kaiTi";
+line-height: 10px;
+}
+.number1{
+font-size: 110px;
+color:#75b86b;
+font-family: "Microsoft Yahei";
+font-style: oblique;
+}
+.number2{
+font-size: 55px;
+color:#cc8091;
+font-family: "Microsoft Yahei";
+float:left;
+}
+.text1{
+font-size: 20px;
+color:#cc8091;
+font-family: "Microsoft Yahei";
+line-height: 40px;
+margin-left: 30px;
+}
+.text2{
+font-size: 20px;
+color:gray;
+font-family: "Microsoft Yahei";
+margin-left: 30px;
+}
+
+.three1{
+	font-size: 15px;
+	color:#a39d9d;
+	height:250px;
+	width:1000px;	
+}
+.p1{
+	text-decoration: underline;
+	text-transform:capitalize;
+}
+#what .p1{
+	color:green;
+}
+#how .p1{
+	color:orange;
+}
+#when .p1{
+	color:#db3939;
+}
+#what{
+	width:380px;
+	height:250px;
+	float: left;
+	margin-right: 20px;
+	
+}
+#when{
+	width:280px;
+	height:250px;
+	float: left;
+	margin-right: 20px;
+	
+}
+#how{
+	width:280px;
+	height:250px;
+	float: left;  
+}
+#clear2{
+	clear: both;
+}
+.capitalize{
+text-transform: capitalize;
+	
+}
+#how span{
+color: #db3939;
+}
+
+#four{
+	height:700px;
+	width:1233px;
+	margin:20px 0;
+}
+#left{
+	width:600px;
+	float: left;
+	
+}
+#left-top{
+	color:#083874;
+	font-family:"simhei";
+	font-weight: bold;
+	border-bottom: 2px solid;
+	width:600px;
+		
+}
+#left-top span{
+	font-size: 80px;
+	color: yellow;
+	font-style:italic;
+    margin: 0;
+}
+#left-top p{
+	font-size: 40px;
+	margin: 0;
+}
+#left-bottom{
+	font: 22px;
+	color:#767777;
+	font-family: "SimSun";
+	line-height: 16px;
+	text-indent: 2em;
+	margin-top: 30px;
+	width: 600px;
+	}
+#left-bottom p:first-child{
+	text-indent: 0em;
+
+}
+#left-bottom span{
+	float: left;
+	font-size: 80px;
+	color: yellow;
+	line-height: 70px;
+	margin:0 10px 10px 0;
+}
+#left-bottom p{
+	font-size: 15px;
+	margin: 0;
+	line-height: 20px;
+    
+}
+#left-bottom img{
+	float:right;
+	margin: 10px 0 10px 10px;
+	width:200px;
+	height:350px;
+	
+
+}
+#right{
+	width:600px;
+	float: right;
+	margin-left: 20px;
+}
+#right-top img{
+	width:600px;
+	height:300px;
+	
+}
+#right-bottom{
+	background-color: #f1e8e8;
+	width:600px;
+	margin-top:20px;
+	height:350px;
+	position: relative;
+}
+#right-bottom ul{
+ width:450;
+ height:150px;
+ font-size: 15px;
+ list-style-type: none;
+ text-align: left;
+ line-height: 40px;
+ font-family:"SimSun";
+ margin:0;
+
+}
+
+.trangle{
+	border-bottom:10px solid;
+	border-right: 5px solid transparent;
+	border-left:5px solid transparent;
+	color: black;
+	display: inline-block;
+	margin-right: 5px;
+	
+}
+
+.span2{
+	font-size:5px;
+}
+
+#two{
+	font-size: 15px;
+	float:right;
+	width:200px;
+	height:150px;
+	margin-right: 30px;
+	
+}
+#two span{
+	font-size: 40px;
+	color:#db3939;
+	font-family: "simhei";
+}
+#two span:first-child{
+	float: left;
+	margin-right: 5px;
+}
+#two span:last-child{
+	float:right;
+}
+
+#three{
+	background-color: #db3939;
+    float:left;
+	width:300px;
+	height:200px;
+	color:white;
+	line-height: 15px;
+	position: absolute;
+	bottom:0;
+	left:0;
+
+}
+.texttwo{
+	width:250px;
+	height: 150px;
+	margin-top: 60px;
+	margin-right: 50px;
+}
+#three .o{
+	height:120px;
+	width:100px;
+	float:left;
+	border-right: 2px solid white;
+	margin-right: 10px;
+	margin-top: 40px;
+	display: inline-block;
+	line-height: 120px;
+}
+
+ #three .o p{
+	margin:0 auto;
+	font-size: 150px;
+	font-family: "Microsoft Yahei";
+}
+.textthree p:nth-child(2) {
+	font-size:20px;
+	font-family: "Yahei";
+	line-height: 30px;
+}
+.textthree p:nth-child(3) {
+	font-size: 5px;
+	
+}
+#footer{
+	height:30px;
+	border-top: 2px solid gray;
+	margin-top: 20px;
+}
+#footer p{
+	color: #db3939;
+	font-size: 10px;
+	text-align: right;
+}
+
+</style>
+</head>
+<body>
+	<div id="container">
+	    <div id="head">
+			   <div id="small">
+			   	<p><a href="ife.bai.com">ife.bai.com</a></p>
+			   </div>
+			   <div id="date"><p>2016.03</p></div>
+		</div>
+
+			<div class="imgs">
+			  
+				<div id="img1"><img src="./images/task61.jpg" width="800px" height="400px"/></div>
+		      
+				<div id="content1">
+					<div class="title1">ABOUT<br/>TECHNOLOGE</div>
+					<div class="title2">About technologe about teachnology about tecknologe</div>	
+					<div class="number1">700</div>
+					<div class="number2">3.2</div>
+					<div class="text1">css</div>
+					<div class="text2">csscsscsscssscsssc</div>	
+				<div id="clear"></div>	
+				</div>
+			</div>
+
+        <div class="three1">
+			<div id="what">
+				<p class="p1">what</p>
+				<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+			</div>
+			<div id="when">
+				<p class="p1">when</p>
+				<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+			</div>
+			<div id="how">
+				<p class="p1">how</p>
+				<p>前端前端前端前端<br/>
+				端前端前端前端前端前端<br/>
+				前端前端前端</p>
+				<p class="capitalize">what------<span>40%</span></p>
+				<p class="capitalize">what------<span>30%</span></p>
+				<p class="capitalize">what------<span>30%</span></p>
+	        </div>
+	        <div id="clear2"></div>
+	     </div>
+	
+	    <div id="four">
+              <div id="left">
+				<div id="left-top">
+				<p><span>THE</span> TECKNOLOGE OF FRONT</p>
+				<p>前端技术领域</p>
+				</div>
+
+				<div id="left-bottom">
+					<p><span>前</span>端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前<img src="./images/task63.jpg"  />端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+					<p>端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+					<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+					
+				</div>
+		    </div>
+
+
+
+            <div id="right">
+				<div id="right-top">
+					<img src="./images/task64.jpg" /></div>
+				<div id="right-bottom">
+					<ul>
+						<li><span class="trangle"></span>前端前端前端前端前端前..........................<span class="span2">前端</span></li>
+						<li><span class="trangle"></span>前端前端前端前..................................<span class="span2">前前端</span></li>
+						<li><span class="trangle"></span>前端前端前端前端前端前端........................<span class="span2">前端</span></li>
+					</ul>
+				
+					<div id="two">
+						<span>“</span>world hello world world hello world hello world hello world hello world hello world hello world hello<span>”</span>
+					</div>
+
+					<div id="three">
+						    <div class="o"><p>0</p></div>
+							<div class="texttwo">
+							<p>ONE TWO<br>THREE FOUR FIVE</p>
+							<p>hello world hello world hello world</p>
+					    </div>
+					</div>
+			</div>
+		</div>
+		
+	</div>
+			<div id="footer">
+				<p>ife.baidu.com</p>
+			</div>
+</div>
+</body>
+</html>

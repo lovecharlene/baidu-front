@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		background-color: #f0f0f0;
+	}	
+    .wrapper{
+    	padding:0 20px;
+    	display: flex;
+        margin-top: 10px;
+    }
+    .box{
+    	width:150px;
+    	margin:10px 0px;
+    }
+    .box1{
+    	height:120px;
+    	border: 1px solid #f00;
+    }
+    .box2{
+    	height:100px;
+    	border: 1px solid #f00;
+    }
+    .box3{
+    	height:40px;
+    	border: 1px solid #f00;
+    }
+    .box4{
+    	height:200px;
+    	border: 1px solid #0f0;
+    }
+@media(min-width:641px){
+	.wrapper{
+		justify-content: space-between;
+		align-items:center;
+	}
+}
+@media(max-width:640px){
+     .wrapper{
+		justify-content: space-between;
+		align-items:flex-start;
+		flex-wrap: wrap;
+	}
+    .box4{
+    	order:-1;
+    }
+}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="box box1"></div>
+		<div class="box box2"></div>
+		<div class="box box3"></div>
+		<div class="box box4"></div>
+	</div>
+</body>
+</html>
